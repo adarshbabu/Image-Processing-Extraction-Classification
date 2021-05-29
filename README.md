@@ -1,24 +1,25 @@
 # Image-Processing-Extraction-Classification
 Notebook for image 
--Processing 
+-Processing
 -Extraction
 -Classification
 
 **Processing**
--Resizing
--Masking
+- Resizing
+- Masking
+  - with RGB
+  - with HSV
 
-```
-masked_image = np.copy(image)
-masked_image[mask != 0] = [0, 0, 0]
-```
-
-**Masking with RGB**
+**A. Masking with RGB**
 For `Non-Gradient` green background
 ```
+lower_green = np.array([0,180,0]) 
+upper_green = np.array([100,255,100])
+
 mask = cv2.inRange(image, lower_green, upper_green)
-```
-**Masking with HSV**
+```  
+
+**B. Masking with HSV**
 For `Gradient` green background
 
 ```
@@ -28,4 +29,8 @@ lower_hue = 40
 upper_hue = 80
 
 mask=cv2.inRange(h,lower_hue,upper_hue)
+```
+***mask syntax***
+```
+masked_image[mask != 0] = [0, 0, 0]
 ```
