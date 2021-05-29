@@ -1,12 +1,12 @@
 # Image-Processing-Extraction-Classification
 Notebook for image 
-*Processing 
-*Extraction
-*Classification
+-Processing 
+-Extraction
+-Classification
 
 **Processing**
-*Resizing
-*Masking
+-Resizing
+-Masking
 
 ```
 masked_image = np.copy(image)
