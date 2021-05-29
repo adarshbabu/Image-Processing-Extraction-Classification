@@ -6,7 +6,7 @@ Notebook for image
 
 **Processing**
 >Resizing
- Masking 
+>Masking 
 
 ```
 masked_image = np.copy(image)
