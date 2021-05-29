@@ -5,8 +5,9 @@ Notebook for image
 *Classification
 
 **Processing**
->resizing
->masking
+>*Resizing
+ *Masking **with RGB
+          **with HSV
 
 `
 masked_image = np.copy(image)
