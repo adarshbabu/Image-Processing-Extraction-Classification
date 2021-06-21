@@ -30,7 +30,7 @@ upper_hue = 80
 
 mask=cv2.inRange(h,lower_hue,upper_hue)
 ```
-***mask syntax***
+***masking syntax***
 ```
 masked_image[mask != 0] = [0, 0, 0]
 ```
